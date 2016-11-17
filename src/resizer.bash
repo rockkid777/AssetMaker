@@ -1,7 +1,7 @@
 #!/bin/bash
 
-assetDir="/Users/$USER/Library/Application Support/resizer/Assets"
-tmpDir="/Users/$USER/Library/Application Support/resizer/Tmp"
+assetDir="/Users/$USER/Library/Application Support/AssetMaker/Assets"
+tmpDir="/Users/$USER/Library/Application Support/AssetMaker/Tmp"
 
 function max {
     if [ $1 -lt $2 ]; then
