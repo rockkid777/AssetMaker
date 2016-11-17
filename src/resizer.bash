@@ -15,7 +15,7 @@ function processImage {
     filePath=$1
     fullFileName=$(basename "$filePath")
     fileExtension="${fullFileName##*.}"
-    fileName="${fullFileName%.*}"
+    fileName="$(echo ${fullFileName%.*} | sed 's/\(.*\)\(\@3x\)/\1/g')"
 
     if [ ! "$fileExtension" == "png" ]; then
         return 1
